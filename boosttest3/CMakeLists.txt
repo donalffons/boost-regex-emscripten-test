@@ -1,0 +1,6 @@
+project(boosttest)
+add_executable(boosttest main.cpp)
+SET(CMAKE_EXECUTABLE_SUFFIX ".html")
+target_link_libraries(boosttest "${CMAKE_SOURCE_DIR}/buildBoost/boost_1_56_0/stage/lib/libboost_regex.a")
+target_link_libraries(boosttest "${CMAKE_SOURCE_DIR}/buildBoost/boost_1_56_0/stage/lib/libboost_filesystem.a")
+target_link_libraries(boosttest "${CMAKE_SOURCE_DIR}/buildBoost/boost_1_56_0/stage/lib/libboost_system.a")

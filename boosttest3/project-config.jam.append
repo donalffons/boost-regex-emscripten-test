@@ -1,0 +1,10 @@
+
+using clang	: emscripten
+:
+emcc -v -s USE_ZLIB=1
+:
+<archiver>emar
+<ranlib>emranlib
+<linker>emlink
+<cxxflags>-std=c++11
+;
